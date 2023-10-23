@@ -1,4 +1,6 @@
 FROM node:alpine
-COPY . /app
-WORKDIR /app
+WORKDIR /usr/src/app
+COPY package* .
+RUN npm install
+COPY . .
 CMD node app.js

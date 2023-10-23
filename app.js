@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 const app = express()
 const port = 3000
 
-mongoose.connect("mongodb://localhost:27017/mydatadb",{})
+mongoose.connect("mongodb://mongdb2:27017/mydatadb",{})
 
 const EntrySchema = new mongoose.Schema({
     text:String,
